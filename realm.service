@@ -8,6 +8,6 @@ User=root
 Restart=on-failure
 RestartSec=5s
 DynamicUser=true
-ExecStart=/usr/bin/realm -l x.x.x.x:port -r x.x.x.x:port
+ExecStart=/usr/local/realm-sh/realm -c /usr/local/realm-sh/config.json
 [Install]
 WantedBy=multi-user.target
